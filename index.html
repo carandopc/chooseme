@@ -1,1 +1,84 @@
-400
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baybayin</title>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id="overlay">
+        <div id="text">overalying</div>
+    </div>
+    <div id="overlay-tu">
+        <div id="text">overalyingtetete</div>
+    </div>
+    <div>
+        <h1>
+            choose
+        </h1>
+    </div>
+    <script>
+        function show() {
+            // alert('wow');
+            console.log('show');
+            on();
+        }
+
+        function on() {
+            console.log('on');
+        document.getElementById("overlay").style.display = "block";
+        }
+
+        document.getElementById("overlay").onclick = function() {
+        off();
+        };
+
+        function off() {
+        document.getElementById("overlay").style.display = "none";
+        }
+
+        function showTu() {
+            document.getElementById("overlay-tu").style.display="block";
+        }
+        
+        document.getElementById("overlay-tu").onclick = function() {
+        document.getElementById("overlay-tu").style.display = "none";
+        };
+    </script>
+    <div>
+        <button onclick="show()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="showTu()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+        <button onclick="myFunction()">
+            <img src="img/cat.jpg" alt="Clickable button image">
+        </button>
+    </div>
+</body>
+</html>

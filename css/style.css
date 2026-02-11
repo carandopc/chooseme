@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'TagDoc';
+  src: url('TagDoc93.ttf') format('truetype');
+}
+
+.text-baybayin {
+  font-family: 'TagDoc';
+  font-size: 4rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #e9ecef;
+  min-height: calc(1.5em + .75rem + 2px);
+}
+
+.text-baybayin:hover {
+  cursor: pointer;
+}
+
+/* :-moz-ui-invalid */
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#overlay-tu {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(179, 44, 44, 0.7);
+  z-index: 2;
+  cursor: pointer;
+}
