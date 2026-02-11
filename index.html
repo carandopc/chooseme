@@ -9,11 +9,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <div id="overlay">
+    <div id="overlay" onclick="hideOverlay()">
         <div id="text">overalying</div>
-    </div>
-    <div id="overlay-tu">
-        <div id="text">overalyingtetete</div>
     </div>
     <div>
         <h1>
@@ -21,38 +18,25 @@
         </h1>
     </div>
     <script>
-        function show() {
-            // alert('wow');
-            console.log('show');
-            on();
-        }
-
-        function on() {
-            console.log('on');
-        document.getElementById("overlay").style.display = "block";
-        }
-
-        document.getElementById("overlay").onclick = function() {
-        off();
-        };
-
-        function off() {
-        document.getElementById("overlay").style.display = "none";
-        }
-
-        function showTu() {
-            document.getElementById("overlay-tu").style.display="block";
+        function showOverlay(text) {
+            showOverlayFull(text, '##00000070');
         }
         
-        document.getElementById("overlay-tu").onclick = function() {
-        document.getElementById("overlay-tu").style.display = "none";
-        };
+        function showOverlayFull(text, color) {
+            document.getElementById("text").innerText = text;
+            document.getElementById("overlay").style.backgroundColor = color;
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function hideOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
     </script>
     <div>
-        <button onclick="show()">
+        <button onclick="showOverlay('wowwieru')">
             <img src="img/cat.jpg" alt="Clickable button image">
         </button>
-        <button onclick="showTu()">
+        <button onclick="showOverlayFull('yay', '#cc006980')">
             <img src="img/cat.jpg" alt="Clickable button image">
         </button>
         <button onclick="myFunction()">
