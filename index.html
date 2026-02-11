@@ -3,65 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baybayin</title>
+  <title>choose me</title>
   <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 </head>
 <body>
     <div id="overlay" onclick="hideOverlay()">
-        <div id="text">overalying</div>
+        <div id="text"></div>
     </div>
     <div>
         <h1>
             choose
         </h1>
     </div>
-    <script>
-        function showOverlay(text) {
-            showOverlayFull(text, '##00000070');
-        }
-        
-        function showOverlayFull(text, color) {
-            document.getElementById("text").innerText = text;
-            document.getElementById("overlay").style.backgroundColor = color;
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function hideOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
     <div>
-        <button onclick="showOverlay('wowwieru')">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[0])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="showOverlayFull('yay', '#cc006980')">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[1])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[2])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[3])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[4])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[5])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[6])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[7])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[8])">
+            <img src="img/cat.jpg" class="shake">
         </button>
-        <button onclick="myFunction()">
-            <img src="img/cat.jpg" alt="Clickable button image">
+        <button onclick="showOverlay(wrongAnswers[9])">
+            <img src="img/cat.jpg" class="shake">
+        </button>
+        <button onclick="showOverlay(wrongAnswers[10])">
+            <img src="img/cat.jpg" class="shake">
+        </button>
+        <button onclick="showOverlay(wrongAnswers[11])">
+            <img src="img/cat.jpg" class="shake">
+        </button>
+        <button onclick="showOverlay(wrongAnswers[12])">
+            <img src="img/cat.jpg" class="shake">
+        </button>
+        <button onclick="showOverlayCorrect()">
+            <img src="img/cat.jpg" class="shake">
         </button>
     </div>
 </body>
