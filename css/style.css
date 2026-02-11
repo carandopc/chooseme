@@ -23,6 +23,10 @@
   word-break: break-word;
 }
 
+#buttons {
+  padding: 16px 6px;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -30,14 +34,14 @@ button {
 
 img {
 /* Set equal width and height to ensure a perfect circle */
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   
   /* Apply border-radius to make it circular */
   border-radius: 30%;
   
   /* Add a border */
-  border: 5px solid #555; /* Example color */
+  border: 5px solid #1397b8; /* Example color */
   
   box-shadow: inset;
   /* Optional: maintain aspect ratio and crop the image within the circle */
